@@ -14,13 +14,14 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 12,
     layersOrder: [
       { name: "1" },
       { name: "2" },
       { name: "3" },
       { name: "4" },
       { name: "5" },
+      { name: "6" },
     ],
   },
 ];
@@ -106,7 +107,7 @@ const gif = {
   export: true,
   repeat: 0,
   quality: 100,
-  delay: 500,
+  delay: 1000,
 };
 
 const text = {
@@ -145,11 +146,11 @@ const preview = {
 };
 
 const preview_gif = {
-  numberOfImages: 5,
+  numberOfImages: 6,
   order: "ASC", // ASC, DESC, MIXED
   repeat: 0,
   quality: 100,
-  delay: 500,
+  delay: 1000,
   imageName: "preview.gif",
 };
 
