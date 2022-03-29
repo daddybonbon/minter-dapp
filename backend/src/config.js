@@ -16,8 +16,12 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 6,
     layersOrder: [
-      { name: "Worlds" },
-      { name: "Gates" },
+      { name: "1" },
+      { name: "2" },
+      { name: "3" },
+      { name: "4" },
+      { name: "5" },
+      { name: "6" },
     ],
   },
 ];
@@ -103,7 +107,7 @@ const gif = {
   export: true,
   repeat: 0,
   quality: 100,
-  delay: 500,
+  delay: 1000,
 };
 
 const text = {
