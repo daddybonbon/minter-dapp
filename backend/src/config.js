@@ -14,14 +14,10 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 1,
+    growEditionSizeTo: 6,
     layersOrder: [
-      { name: "1" },
-      { name: "2" },
-      { name: "3" },
-      { name: "4" },
-      { name: "5" },
-      { name: "6" },
+      { name: "World" },
+      { name: "Gates" },
     ],
   },
 ];
@@ -54,7 +50,7 @@ const METADATA_UPDATABLE = true; // set to false if you don't want to allow meta
 const OWNER_ADDRESS = '0xF1d5e6623E33C69321C20C39d278107A5B21d2CB';
 const TREASURY_ADDRESS = '0xF1d5e6623E33C69321C20C39d278107A5B21d2CB';
 const MAX_SUPPLY = 6; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 60; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 10; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 1; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
