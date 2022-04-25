@@ -7,17 +7,32 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "ElonGates";
-const description = "Worlds beyond";
+const namePrefix = "DOMsZone";
+const description = "DOM NFTs";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 6,
+    growEditionSizeTo: 100,
     layersOrder: [
-      { name: "World" },
-      { name: "Gates" },
+      { name: "Background" },
+      { name: "Underlay" },
+      { name: "Body" },
+      { name: "Eyewear" },
+      { name: "Mouthwear" },
+      { name: "Headwear" },
+      { name: "EarBling" },
+      { name: "Handwear" },
+      { name: "UpperBod" },
+      { name: "LowerBod" },
+      { name: "NippleBling" },
+      { name: "Footwear" },
+      { name: "ToeBling" },
+      { name: "Toenails" },
+      { name: "HandofGod" },
+      { name: "ArmBling" },
+      { name: "Overwear" },
     ],
   },
 ];
@@ -33,7 +48,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "", // Replace with your website or remove this line if you do not have one.
+  external_url: "DOMsZone.com", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -44,17 +59,17 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'polygon'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'ElonGates';
+const CONTRACT_NAME = 'DOMsZone';
 const CONTRACT_SYMBOL = 'EG';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0xF1d5e6623E33C69321C20C39d278107A5B21d2CB';
 const TREASURY_ADDRESS = '0xF1d5e6623E33C69321C20C39d278107A5B21d2CB';
-const MAX_SUPPLY = 6; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 5 // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 6; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 10000; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-04-06T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-05-22T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
@@ -70,7 +85,7 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually inclu
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "What lies beyond ElonGates?"; // Replace with what you want the generic descriptions to say.
+const GENERIC_DESCRIPTION = "Which DOM?"; // Replace with what you want the generic descriptions to say.
 const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafybeifpqr2gtry3qiuap4wql6g7cmiqejlhxggebe4oxvzqxcpzcarkau"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
@@ -90,7 +105,7 @@ try {
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.elongatesworlds.com",
+  external_url: "https://www.domszone.com",
   creators: [
     {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
